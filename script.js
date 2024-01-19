@@ -126,6 +126,8 @@ function buyWeapon() {
     }
   } else {
     text.innerText = "You already have the most powerful weapon!";
+    button2.innerText = "Sell weapon for 15 gold";
+    button2.onclick = sellWeapon;
   }
 }
 
@@ -158,11 +160,15 @@ function fightDragon() {
 
 function goFight() {
   update(locations[3]);
-  monsterHealth = monsters[fighting].health ;
+  monsterHealth = monsters[fighting].health;
+  monsterStats.style.display = "block";
+  monsterName.innerText = monsters[fighting].name;
+  monsterHealthText.innerText = monsterHealth;
 }
 
 function attack() {
-
+  text.innerText = "The " + monsters[fighting].name + " attacks.";
+  text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
 }
 
 function dodge() {
