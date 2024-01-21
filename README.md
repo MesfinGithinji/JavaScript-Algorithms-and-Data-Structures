@@ -1,3 +1,5 @@
-In this JavaScript Algorithm and Data Structures Certification, I learn the JavaScript fundamentals like variables, arrays, objects, loops, functions, the DOMand more.
-
-I also Practice Object Oriented Programming (OOP), Functional Programming, algorithmic thinking, how to work with local storage, and how to fetch datausing anAPI.
+This Repository contains projects built as I learn Javascript.
+Each Folder respresents a particular project which i built at the end of each stage of my learning journey.
+As the folder name sugests the project covers a particular section of the langauages , where a variety of concepts
+are used together to build a project at the end  to solidify the concepts.
+The projects vary in difficulty from basic to advance Javascript.
