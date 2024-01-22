@@ -22,5 +22,4 @@ function cleanInputString(str) {
       cleanStrArray.push(strArray[i]);
     }
   }
-
 }
