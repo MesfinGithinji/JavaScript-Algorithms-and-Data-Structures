@@ -14,12 +14,18 @@ const output = document.getElementById('output');
 let isError = false;
 
 function cleanInputString(str) {
-  const strArray = str.split('');
-  const cleanStrArray = [];
+  // const strArray = str.split('');
+  // const cleanStrArray = [];
 
-  for (let i = 0; i < strArray.length; i++) {
-    if (!["+", "-", " "].includes(strArray[i])) {
-      cleanStrArray.push(strArray[i]);
-    }
-  }
+  // for (let i = 0; i < strArray.length; i++) {
+  //   if (!["+", "-", " "].includes(strArray[i])) {
+  //     cleanStrArray.push(strArray[i]);
+  //   }
+  // }
+  /**
+   * The code above is not memory efficient to go through
+   * string. Its more efficient to use regex to look for a match.
+   * We use the \ to escape the +, because a + has a special meaning in regular expressions.
+   */
+  const regex = /\+-/;
 }
