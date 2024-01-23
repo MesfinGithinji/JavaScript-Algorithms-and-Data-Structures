@@ -26,6 +26,18 @@ function cleanInputString(str) {
    * The code above is not memory efficient to go through
    * string. Its more efficient to use regex to look for a match.
    * We use the \ to escape the +, because a + has a special meaning in regular expressions.
+   * check step 26 , 27 , 28
    */
-  const regex = /\+-/;
+  const regex = /[+-\s]/g;
+  return str.replace(regex, '');
+}
+
+function isInvalidInput(str) {
+  const regex = /\d+e\d+/i;
+  return str.match(regex);
+}
+
+function addEntry() {
+  const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
+
 }
