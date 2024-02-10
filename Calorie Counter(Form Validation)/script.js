@@ -35,6 +35,7 @@ function cleanInputString(str) {
 function isInvalidInput(str) {
   const regex = /\d+e\d+/i;
   return str.match(regex);
+  
 }
 
 function addEntry() {
@@ -81,6 +82,7 @@ function calculateCalories(e) {
   <p>${budgetCalories} Calories Budgeted</p>  <p>${consumedCalories} Calories Consumed</p>
   <p>${exerciseCalories} Calories Burned</p>`;
   output.classList.remove('hide')
+
 }
 
 function getCaloriesFromInputs(list) {
