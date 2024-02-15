@@ -27,6 +27,7 @@ function cleanInputString(str) {
    * string. Its more efficient to use regex to look for a match.
    * We use the \ to escape the +, because a + has a special meaning in regular expressions.
    * check step 26 , 27 , 28
+   * Regex is also the best for such a use case
    */
   const regex = /[+-\s]/g;
   return str.replace(regex, '');
