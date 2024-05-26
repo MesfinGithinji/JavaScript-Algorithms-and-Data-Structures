@@ -8,7 +8,6 @@ let inventory = ["stick"];
 /**
  * Interacting with elements in the DOM we use the 
  * queryselector which takes in a CSS selector and returns the first element found 
- * 
  * const is used to decaler variables that will not be reassigned
  */
 const button1 = document.querySelector('#button1');
